@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurociencias Valencia - Evaluación y Estimulación Cognitiva</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo-brain.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a class="logo">
+                <img src="images/logo-brain.svg" alt="Logo Neurociencias" class="logo-icon">
+                <span class="logo-text"><span class="logo-bold">NEUROCIENCIAS</span> VALENCIA</span>
+            </a>
+            <nav class="nav-links">
+                <a href="https://www.ivann.es" class="nav-link highlight-blue">Neuropsicología</a>
+                <span class="nav-separator">|</span>
+                <a href="https://www.clasesconalitupedagoga.es" class="nav-link highlight-orange">Neuroeducación</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Neurociencias en Valencia:</h1>
+                <h2 class="hero-subtitle">Desde el Nacimiento hasta la Vejez</h2>
+                <p class="hero-description">
+                    <span class="text-bold">Evaluación, Estimulación</span> <span class="text-orange">Cognitiva</span><br>
+                    <span class="text-bold">e Intervención Psicológica</span> para todas las edades.
+                </p>
+                <button class="btn-cta" onclick="requestConsultation()">
+                    SOLICITA TU CONSULTA
+                    <span class="btn-subtext">Llamada informativa gratuita</span>
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="images/family.png" alt="Familia en consulta neuropsicológica">
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/icon-brain-scan.jpg" alt="Diagnóstico Neuropsicológico">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Diagnóstico<br>Neuropsicológico<br><span class="text-blue">Preciso</span></h3>
+                    <p class="service-description">Detectamos TDAH, demencias, trastornos del neurodesarrollo y más.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/icon-brain-glow.jpg" alt="Estimulación Cognitiva">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Estimulación<br><span class="text-blue">Cognitiva</span></h3>
+                    <p class="service-description">Mejora tu funcionamiento cerebral: memoria, atención y funciones ejecutivas.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="images/icon-heart.jpg" alt="Terapia Psicológica">
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Terapia<br><span class="text-blue">Psicológica</span></h3>
+                    <p class="service-description">Terapia de ansiedad, depresión, TCA, TOC, transtornos de la personalidad, adicciones y más.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section class="specialists">
+        <div class="specialists-container">
+            <h2 class="section-title">Neuropsicólogos y Neuroeducadores en Valencia</h2>
+            <p class="section-subtitle">
+                ¿Buscas ayuda en cualquier etapa de la vida? <span class="text-orange-bold">¡Estás en el lugar adecuado!</span>
+            </p>
+            <p class="section-label">Somos expertos en:</p>
+            
+            <div class="expertise-table">
+                <div class="expertise-column">
+                    <h3 class="expertise-header">Infancia</h3>
+                    <ul class="expertise-list">
+                        <li>TDAH, Autismo, Altas capacidades</li>
+                        <li>Dificultades de Aprendizaje</li>
+                        <li>Trastornos del neurodesarrollo</li>
+                    </ul>
+                </div>
+                <div class="expertise-column">
+                    <h3 class="expertise-header">Adultos</h3>
+                    <ul class="expertise-list">
+                        <li>Estrés, Ansiedad</li>
+                        <li>Terapia Neuropsicológica</li>
+                        <li>Depresión, TOC, Adicciones</li>
+                    </ul>
+                </div>
+                <div class="expertise-column">
+                    <h3 class="expertise-header">Tercera Edad</h3>
+                    <ul class="expertise-list">
+                        <li>Deterioro Cognitivo</li>
+                        <li>Alzheimer, Ictus, Afasias</li>
+                        <li>Envejecimiento activo, Talleres para mayores</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Centers Section -->
+    <section class="centers">
+        <div class="centers-container">
+            <h2 class="section-title">Nuestro Equipo en Valencia</h2>
+            
+            <div class="centers-grid">
+                <div class="center-card ivann">
+                    <div class="center-icon">
+                        <img src="images/logo-ivann.png" alt="IVANN" width="268" height="94">
+                    </div>
+                    <h3 class="center-name blue">Neurociencias y Psicología</h3>
+                    <p class="center-description">Expertos en Evaluación <span class="text-blue">Neuropsicológica y Neurológica</span><br>y Rehabilitación Cognitiva a tu alcance</p>
+                    <button class="btn-center blue" onclick="openCenter('ivann')">Ver IVANN Instituto Valenciano de Neurociencias →</button>
+                </div>
+                
+                <div class="center-card clases">
+                    <div class="center-icon">
+                        <img src="images/logo-clases-ali.png" alt="Clases Con Ali tu Pedagoga" width="268" height="94">
+                    </div>
+                    <h3 class="center-name orange">Neuroeducación y Dificultades de aprendizaje</h3>
+                    <p class="center-description">Especialistas en Neuroeducación, apoyo escolar y <span class="text-orange">Estimulación Cognitiva</span></p>
+                    <button class="btn-center orange" onclick="openCenter('clases')">Ver Clases Con Ali tu Pedagoga →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2 class="cta-title">Mejora tu Calidad de Vida con <span class="text-blue">Nosotros en Valencia</span></h2>
+            <p class="cta-subtitle">Contacta con nosotros y da el primer paso hacia el cambio.</p>
+            <button class="btn-cta-large" onclick="scheduleAppointment()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white" style="vertical-align: middle; margin-right: 8px;">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                AGENDA UNA CITA HOY
+            </button>
+            <p class="cta-phone">o llama al: <span class="phone-number">644 291 823 o 644 621 023</span></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-badges">
+                <span class="badge"><span class="badge-icon">📍</span> Plaza San Felipe Neri 4, Valencia</span>
+                <span class="badge"><span class="badge-icon">✓</span> Centro sanitario certificado</span>
+                <span class="badge"><span class="badge-icon">💻</span> Terapias On-line</span>
+            </div>
+            <div class="footer-links">
+                <span class="footer-text">Neuroeducación - Psicología en Valencia</span>
+                <span class="footer-separator">|</span>
+                <span class="footer-copyright">2026 Neurociencias Valencia</span>
+                <span class="footer-separator">|</span>
+                <a href="https://www.ivann.es/aviso-legal/" class="footer-link">Aviso Legal</a>
+                <span class="footer-separator">|</span>
+                <a href="https://www.ivann.es/privacy-policy/" class="footer-link">Política de Privacidad</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
